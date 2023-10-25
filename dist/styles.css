@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+body label {
+  font-style: normal;
+  font-weight: 600;
+  color: hsl(0, 1%, 44%);
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+@media screen and (min-width: 700px) {
+  body label {
+    font-size: 1rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .age-form {
+  width: 100%;
+  padding-top: 3.2em;
+}
+main .age-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .age-form form input {
+  width: 75px;
+  height: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-style: normal;
+  border-radius: 0.5rem;
+  border: none;
+  outline: 1px solid hsl(0, 0%, 86%);
+  padding-left: 1rem;
+}
+main .age-form form input:hover {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+@media screen and (min-width: 700px) {
+  main .age-form form input {
+    width: 150px;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+main .age-form form .input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 150px;
+  gap: 0.2em;
+}
+main .age-form form .input .error-box {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+main .age-form form .input .error-msg {
+  color: hsl(0, 100%, 67%);
+  max-width: 80px;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 700px) {
+  main .age-form form .input .error-msg {
+    font-size: 0.8rem;
+    max-width: fit-content;
+  }
+}
+main .age-form form .input .hidden {
+  display: none;
+}
+main .results {
+  padding-top: 1em;
+}
+main .results h2 {
+  font-weight: 800;
+  line-height: 1;
+  font-size: 3.5rem;
+}
+@media screen and (min-width: 700px) {
+  main .results h2 {
+    font-size: 6.5rem;
+  }
+}
+main .results span {
+  color: hsl(259, 100%, 65%);
+}
+
+button {
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 1em;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+@media screen and (min-width: 700px) {
+  button {
+    width: 94px;
+    height: 94px;
+    padding: 2em;
+    transform: translateX(400px);
+  }
+}
+
+.flex-r {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+/*# sourceMappingURL=styles.css.map */

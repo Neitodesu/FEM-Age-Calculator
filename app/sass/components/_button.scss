@@ -1,0 +1,23 @@
+@use '../utils/' as u;
+@use '../abstracts/' as a;
+
+button {
+	background-color: u.$clr-primary;
+	border: none;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	padding: 1em;
+	cursor: pointer;
+
+	&:hover {
+		background-color: u.$off-black;
+	}
+
+	@include a.break(700px) {
+		width: 94px;
+		height: 94px;
+		padding: 2em;
+		transform: translateX(400px);
+	}
+}
